@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.header_menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 1em 0em 1em 1em;
+
+  .arrow {
+    align-self: center;
+  }
+  .left {
+    font-size: x-large;
+    color: black;
+  }
+}

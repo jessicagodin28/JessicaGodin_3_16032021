@@ -31,15 +31,9 @@
       <section class="map">
         <div class="map_search">
           <i class="fas fa-map-marker-alt"></i>
-          <input
-            class="map_input"
-            type="text"
-            name="ville"
-            placeholder="Paris, Belleville"
-            size="1"
-          />
+          <span class="map_text">Paris,Belleville</span>
         </div>
-        <div class="map_txt">
+        <div class="map_title">
           <h2>Réservez le menu qui vous convient</h2>
           <p>
             Découvrez des restaurants d'exception, séléctionnés par nos soins.
@@ -94,9 +88,9 @@
                     </h4>
                     <p class="menu_subtext">Ménilmontant</p>
                   </div>
-                  <div class="logo_heart">
+                  <button class="menu_like">
                     <i class="far fa-heart"></i><i class="fas fa-heart"></i>
-                  </div>
+                  </button>
                 </div>
               </figcaption>
             </figure>
@@ -121,9 +115,9 @@
                     </h4>
                     <p class="menu_subtext">Charonne</p>
                   </div>
-                  <div class="logo_heart">
+                  <button class="menu_like">
                     <i class="far fa-heart"></i><i class="fas fa-heart"></i>
-                  </div>
+                  </button>
                 </div>
               </figcaption>
             </figure>
@@ -145,9 +139,9 @@
                     <h4 class="menu_text"><strong>À la française</strong></h4>
                     <p class="menu_subtext">Cité Rouge</p>
                   </div>
-                  <div class="logo_heart">
+                  <button class="menu_like">
                     <i class="far fa-heart"></i><i class="fas fa-heart"></i>
-                  </div>
+                  </button>
                 </div>
               </figcaption>
             </figure>
@@ -171,9 +165,9 @@
                     </h4>
                     <p class="menu_subtext">Folie-Méricourt</p>
                   </div>
-                  <div class="logo_heart">
+                  <button class="menu_like">
                     <i class="far fa-heart"></i><i class="fas fa-heart"></i>
-                  </div>
+                  </button>
                 </div>
               </figcaption>
             </figure>
@@ -183,23 +177,27 @@
     </main>
     <!--FOOTER-->
     <footer class="footer">
-      <span class="footer_logo">ohmyfood</span>
-      <nav>
-        <ul class="footer_list">
-          <li>
-            <a href="#"
-              ><i class="fas fa-utensils"></i>Proposer un restaurant</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><i class="fas fa-hands-helping"></i>Devenir partenaire</a
-            >
-          </li>
-          <li><a href="#">Mentions légales</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="footer_contenu">
+        <span class="footer_logo">ohmyfood</span>
+        <nav>
+          <ul class="footer_list">
+            <li>
+              <a href="#"
+                ><i class="fas fa-utensils items_footer"></i>Proposer un
+                restaurant</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-hands-helping items_footer"></i>Devenir
+                partenaire</a
+              >
+            </li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>

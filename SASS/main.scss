@@ -1,16 +1,10 @@
+@import "Layout/header";
+@import "Layout/footer";
+@import "Pages/map";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-
-$color-primary: #9356dc;
-$color-secondary: #ff79da;
-$color-tertiary: #99e2d0;
 
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-}
-
-header {
-  display: flex;
-  justify-content: center;
 }
