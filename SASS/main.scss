@@ -1,10 +1,8 @@
+@import "Utils/variables";
+@import "Base/base";
+@import "Composant/buttons";
 @import "Layout/header";
 @import "Layout/footer";
 @import "Pages/map";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-
-body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-}

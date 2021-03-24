@@ -1,6 +1,25 @@
 .map_search {
   display: flex;
   justify-content: center;
+  font-size: smaller;
   background-color: #eaeaea;
-  padding: 1em 1em;
+  padding: 0.8em 0em;
+  .map_icon {
+    margin-right: 1rem;
+  }
+}
+
+.map_txt {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding: 1em 1em 2.5em 1em;
+  .map_title {
+    font-size: 20px;
+    padding: 0 1.3em;
+    font-weight: 500;
+  }
+  .map_subtitle {
+    font-weight: 200;
+    font-size: 14px;
+  }
 }
