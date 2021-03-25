@@ -1,0 +1,25 @@
+.menu_new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 0.8em;
+  font-weight: 500;
+  border-radius: 0.2em;
+  color: #278870;
+  background-color: #99e2d0;
+  width: 6em;
+  height: 2em;
+}
+.card figure {
+  margin: 0;
+}
+
+.card_menu_img {
+  height: 150px;
+  border-radius: 1em 1em 0 0;
+  width: 100%;
+  object-fit: cover;
+}

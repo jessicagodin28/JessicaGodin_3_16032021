@@ -4,10 +4,34 @@
   background-image: linear-gradient(0deg, ($color-primary), ($color-secondary));
   border: 0;
   color: white;
+  font-size: 0.8em;
   box-shadow: 0 0.5em 8px rgb(0 0 0 / 15%);
-  transition-duration: 0.1s;
+  transform: scale(1);
+  transition: transform 0.1s;
   &:hover {
-    background-color: white;
-    box-shadow: 0 0.3em 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.04);
   }
+}
+
+.function {
+  margin: 1em;
+}
+.function_container {
+  display: flex;
+  background-color: #f6f6f6;
+  box-shadow: 0.2em 0.3em 0.3em rgb(0 0 0 / 10%);
+  margin: 1em 0;
+  border-radius: 1.25rem;
+}
+
+.function_btn {
+  border: none;
+  background: #f6f6f6;
+  padding-left: 2em;
+}
+
+.function_logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1em;
 }
