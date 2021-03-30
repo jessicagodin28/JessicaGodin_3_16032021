@@ -16,14 +16,17 @@ footer {
   list-style-type: none;
   padding: 0;
   li {
-    padding: 8px 0;
+    padding: 4px 0;
   }
   li a {
     text-decoration: none;
     color: white;
+    font-weight: 300;
   }
 }
 
 .items_footer {
   margin-right: 0.5em;
+  font-size: smaller;
+  width: 1rem;
 }
