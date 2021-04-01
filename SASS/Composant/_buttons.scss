@@ -19,7 +19,16 @@
 
 .function {
   margin: 1em;
+  .function_block {
+    @media screen and (min-width: 800px) {
+      grid-template-columns: repeat(3, 1fr);
+      display: grid;
+      column-gap: 1rem;
+      row-gap: 1rem;
+    }
+  }
 }
+
 .function_container {
   display: flex;
   align-items: baseline;
@@ -51,4 +60,15 @@
   display: flex;
   align-items: center;
   margin-left: 1em;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 1.5em;
+}
+
+.button_command {
+  @include button-page;
+  width: 60%;
 }

@@ -3,6 +3,9 @@
   padding-bottom: 2em;
   .card_container {
     margin: 1em;
+    @media screen and (min-width: 600px) {
+      margin: 2em;
+    }
   }
 }
 
@@ -51,7 +54,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em;
+  padding: 0.6em;
   .menu_text {
     margin: 0;
   }
@@ -63,13 +66,10 @@
   }
 }
 
-.menu_like {
-  position: relative;
-  .like {
-    position: absolute;
-    font-size: larger;
-  }
-  .black {
-    font-size: larger;
+.card_block {
+  @media screen and (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-gap: 2em;
   }
 }
