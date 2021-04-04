@@ -1,0 +1,29 @@
+footer {
+  background-color: #353535;
+  .footer_contenu {
+    padding: 1.5em 0 1em 1em;
+  }
+  .footer_logo {
+    color: white;
+    font-family: "Shrikhand";
+  }
+}
+
+.footer_list {
+  list-style-type: none;
+  padding: 0;
+  li {
+    padding: 4px 0;
+  }
+  li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+  }
+}
+
+.items_footer {
+  margin-right: 0.5em;
+  font-size: smaller;
+  width: 1rem;
+}

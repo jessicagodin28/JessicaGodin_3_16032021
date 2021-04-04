@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+  position: relative;
+  z-index: 1000;
+  .header_logo {
+    width: 50%;
+    padding: 1em 0 0.7em 0;
+  }
+}
+
+.header_menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 1em 0em 1em 1em;
+
+  .arrow {
+    align-self: center;
+  }
+  .left {
+    font-size: x-large;
+    color: black;
+  }
+}

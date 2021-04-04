@@ -1,0 +1,26 @@
+.check {
+  background-color: #99e2d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -0.7em -5em -0.7em 1em;
+  width: 5rem;
+  transition-duration: 0.5s;
+  border-radius: 0 1em 1em 0;
+  display: none;
+
+  .check_validation {
+    background-color: #fff;
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(180deg);
+    transition-duration: 0.5s;
+  }
+  .fa-check {
+    color: #99e2d0;
+  }
+}
