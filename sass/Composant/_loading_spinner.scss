@@ -1,0 +1,58 @@
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  animation: loader 0.02s;
+  animation-delay: 2s;
+  z-index: 10000;
+  animation-fill-mode: both;
+
+  .dot {
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0.8em;
+    border-radius: 50%;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      border-radius: inherit;
+      animation: wave 2s ease-out infinite;
+    }
+
+    @for $i from 1 through 3 {
+      &:nth-child(#{$i}) {
+        background: nth($colors-loading, $i);
+
+        &::before {
+          animation-delay: $i * 0.3s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes wave {
+  50%,
+  75% {
+    transform: scale(2.5);
+  }
+  80%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}

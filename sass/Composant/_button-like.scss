@@ -1,4 +1,62 @@
 .menu_like {
+  @media screen and (min-width: 800px) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 0 solid transparent;
+    font-size: large;
+    cursor: pointer;
+    &:focus {
+      outline: 0;
+    }
+    .like {
+      position: absolute;
+      font-size: larger;
+    }
+    .black {
+      font-size: larger;
+      opacity: 0;
+    }
+    &:hover {
+      overflow: hidden;
+      .like {
+        opacity: 0;
+        transition: all 0.3s linear 0s;
+      }
+      .black {
+        opacity: 1;
+        transition: 0.5s 0s ease;
+        z-index: 999;
+        animation: fill 0.3s ease-in-out;
+        display: inline-block;
+        opacity: 1;
+        background: linear-gradient(
+          to left,
+          #9356dc,
+          #b35cdc,
+          #cf64dc,
+          #e86edb,
+          #ff79da
+        );
+        background: -webkit-linear-gradient(
+          to left,
+          #9356dc,
+          #b35cdc,
+          #cf64dc,
+          #e86edb,
+          #ff79da
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.menu_like {
   position: relative;
   display: flex;
   align-items: center;
@@ -9,7 +67,6 @@
   &:focus {
     outline: 0;
   }
-  cursor: pointer;
   .like {
     position: absolute;
     font-size: larger;
@@ -18,7 +75,7 @@
     font-size: larger;
     opacity: 0;
   }
-  &:hover {
+  &:active {
     overflow: hidden;
     .like {
       opacity: 0;
