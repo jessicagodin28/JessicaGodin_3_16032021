@@ -24,3 +24,9 @@
     ($color-secondary)
   );
 }
+
+@mixin space-txt-over {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
