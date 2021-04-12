@@ -5,7 +5,7 @@
 .menu {
   position: relative;
   background-color: #f6f6f6;
-  margin-top: -5rem;
+  margin-top: -8rem;
   border-radius: 2em 2em 0 0;
   .menu_title-button {
     display: flex;
@@ -17,6 +17,13 @@
 
 .menu_title {
   font-family: $font-type;
+}
+
+.choice_section {
+  @media screen and (min-width: 1250px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .choice_container {
@@ -65,31 +72,9 @@
   background-color: white;
   padding: 0.7em;
   display: flex;
-  // justify-content: space-between;
   overflow: hidden;
   border-radius: 1em;
   margin: 1em 0;
   box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
   cursor: pointer;
-}
-
-.choice_delay-1 {
-  animation: fadein 1s;
-}
-
-.choice_delay-2 {
-  animation: fadein 2s;
-}
-
-.choice_delay-3 {
-  animation: fadein 3s;
-}
-
-@keyframes fadein {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
 }

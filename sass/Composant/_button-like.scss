@@ -7,10 +7,6 @@
   border: 0 solid transparent;
   font-size: large;
 
-  &:focus {
-    outline: 0;
-  }
-
   .like {
     position: absolute;
     font-size: larger;
@@ -21,44 +17,25 @@
     opacity: 0;
   }
 
-  &:focus {
+  &:focus,
+  &:active {
     overflow: hidden;
+    outline: 0;
 
     .like {
       opacity: 0;
       transition: 0.5s 0s ease;
-      // -webkit-transition: 0.5s 0s ease;
-      // -moz-transition: 0.5s 0s ease;
     }
 
     .black {
       opacity: 1;
       transition: 0.5s 0s ease;
-      // -webkit-transition: 0.5s 0s ease;
-      // -moz-transition: 0.5s 0s ease;
       z-index: 999;
       animation: fill 0.3s ease-in-out;
-      // -webkit-animation: fill 0.3s ease-in-out;
-      // -moz-animation: fill 0.3s ease-in-out;
       display: inline-block;
       opacity: 1;
-      background: linear-gradient(
-        to left,
-        #9356dc,
-        #b35cdc,
-        #cf64dc,
-        #e86edb,
-        #ff79da
-      );
+      background: linear-gradient(#9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
       background: -webkit-linear-gradient(
-        to left,
-        #9356dc,
-        #b35cdc,
-        #cf64dc,
-        #e86edb,
-        #ff79da
-      );
-      background: -moz-linear-gradient(
         #9356dc,
         #b35cdc,
         #cf64dc,

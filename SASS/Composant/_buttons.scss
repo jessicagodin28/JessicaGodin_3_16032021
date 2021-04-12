@@ -6,16 +6,17 @@
   color: white;
   font-size: 0.8em;
   box-shadow: 0 0.5em 8px 0 rgb(0 0 0 / 15%);
-  transform: scale(1);
   cursor: pointer;
+
   &:focus {
     outline: 0;
   }
+
   &:hover {
-    transform: scale(1.01);
     background-color: #fff;
     box-shadow: 0 0.5em 8px 0 rgb(0 0 0 / 30%);
     filter: brightness(105%);
+    -webkit-filter: brightness(105%);
   }
 }
 
@@ -23,9 +24,4 @@
   display: flex;
   justify-content: center;
   padding: 1.5em;
-}
-
-.button_command {
-  @include button-page;
-  width: 60%;
 }

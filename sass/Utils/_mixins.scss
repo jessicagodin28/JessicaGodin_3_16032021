@@ -30,3 +30,17 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
+
+@mixin button-hover {
+  transform: scale(1.01);
+  background-color: #fff;
+  box-shadow: 0 0.5em 8px 0 rgb(0 0 0 / 30%);
+  filter: brightness(105%);
+  -webkit-filter: brightness(105%);
+}
+
+@mixin vignette-queries {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 1rem;
+}
