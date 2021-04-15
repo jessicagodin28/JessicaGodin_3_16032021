@@ -4,11 +4,26 @@
   object-fit: cover;
 }
 
+#img_enchanted {
+  max-height: 15em;
+  @media screen and (min-width: 600px) and (max-width: 1440px) {
+    max-height: 29em;
+  }
+}
+
+#enchanted {
+  margin-top: -2.5em;
+  // @media screen and (min-width: 600px) and (max-width: 14400px) {
+  //   margin-top: -5.5em;
+  // }
+}
+
 .menu {
   position: relative;
   background-color: #f6f6f6;
-  margin-top: -8rem;
+  margin-top: -2.5em;
   border-radius: 2em 2em 0 0;
+
   .menu_title-button {
     display: flex;
     justify-content: space-between;

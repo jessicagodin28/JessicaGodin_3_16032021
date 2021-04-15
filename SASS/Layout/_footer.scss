@@ -3,6 +3,7 @@ footer {
   .footer_contenu {
     padding: 1.5em 0 1em 1em;
   }
+
   .footer_logo {
     color: white;
     font-family: $font-type;
@@ -12,9 +13,11 @@ footer {
 .footer_list {
   list-style-type: none;
   padding: 0;
+
   li {
     padding: 4px 0;
   }
+
   li a {
     text-decoration: none;
     color: white;
